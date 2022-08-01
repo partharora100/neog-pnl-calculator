@@ -27,7 +27,9 @@ h1 {
 }
 
 label {
+  display: block;
   font-size: 18px;
+  text-align: center;
 }
 
 label span {
@@ -59,4 +61,9 @@ label span {
   margin-top: 40px;
   font-size: 20px;
   text-align: center;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
 }
