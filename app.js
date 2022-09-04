@@ -34,6 +34,9 @@ const calculateNet = function () {
       showMessage(
         `You made a gain of ${percentReturn}% with absolute gain of ${absoluteReturnTotal} INR 🤑`
       );
+    }
+    if (absoluteReturnStock == 0) {
+      showMessage("No Profit No Loss");
     } else {
       showMessage(
         `You incurred a loss of ${percentReturn}% with absolute loss of ${absoluteReturnTotal} INR 🥺`
