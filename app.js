@@ -29,7 +29,8 @@ const calculateNet = function () {
     const absoluteReturnStock = sellingPrice - buyingPrice;
     console.log(absoluteReturnStock);
     let absoluteReturnTotal = Math.abs(absoluteReturnStock * numberOfStocks);
-    let percentReturn = Math.trunc((absoluteReturnStock / buyingPrice) * 100);
+    let percentReturn = Math.abs(Math.trunc((absoluteReturnStock / buyingPrice) * 100));
+
 
     if (absoluteReturnStock > 0) {
       showMessage(
