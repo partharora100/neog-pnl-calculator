@@ -27,6 +27,7 @@ const calculateNet = function () {
     sellingPrice > 0
   ) {
     const absoluteReturnStock = sellingPrice - buyingPrice;
+    console.log(absoluteReturnStock);
     let absoluteReturnTotal = Math.abs(absoluteReturnStock * numberOfStocks);
     let percentReturn = Math.trunc((absoluteReturnStock / buyingPrice) * 100);
 
@@ -35,9 +36,10 @@ const calculateNet = function () {
         `You made a gain of ${percentReturn}% with absolute gain of ${absoluteReturnTotal} INR 🤑`
       );
     }
-    if (absoluteReturnStock == 0) {
+    if (absoluteReturnStock === 0) {
       showMessage("No Profit No Loss");
-    } else {
+    }
+    if (absoluteReturnStock < 0) {
       showMessage(
         `You incurred a loss of ${percentReturn}% with absolute loss of ${absoluteReturnTotal} INR 🥺`
       );
