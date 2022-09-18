@@ -1,4 +1,6 @@
 # neog-pnl-calculator
+![image](https://user-images.githubusercontent.com/105020410/190889039-ad9b3fff-6891-40ab-b415-488a900b18a9.png)
+
 
 This app calculates the net return the user made on buying and selling a particular stock.
 
