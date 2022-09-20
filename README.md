@@ -22,4 +22,3 @@ This app calculates the net return the user made on buying and selling a particu
 
 Don't forget to leave a ⭐ if you found this useful.
 
-Don't forget to leave a ⭐ if you found this useful.
